@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>+888 Number Rent</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- ЭКРАН ЗАГРУЗКИ -->
+      <div class="container" id="loadingScreen">
+        <div class="content">
+          <div class="icon-wrapper">
+            <svg class="anonymous-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="45" r="30" stroke="url(#iconGradient)" stroke-width="2.5" />
+              <circle cx="40" cy="42" r="4" fill="url(#iconGradient)" />
+              <circle cx="60" cy="42" r="4" fill="url(#iconGradient)" />
+              <path d="M35 55 Q50 65 65 55" stroke="url(#iconGradient)" stroke-width="2.5" stroke-linecap="round" />
+              <path d="M50 75 L50 90 M35 85 L50 90 L65 85" stroke="url(#iconGradient)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <defs>
+                <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#ffffff" />
+                  <stop offset="100%" stop-color="#888888" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <h1 class="main-text">+888 Number Rent</h1>
+          <div class="divider"></div>
+          <p class="user-text" id="userName">Загрузка...</p>
+          <div class="loading-wrapper">
+            <div class="loading-dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <p class="loading-text">Подключение...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ОСНОВНОЕ МЕНЮ -->
+      <div class="container main-menu" id="mainMenu">
+        <div class="menu-content">
+          <div class="tabs">
+            <button class="tab active" data-tab="menu">Номера</button>
+            <button class="tab" data-tab="numbers">Арендованные</button>
+            <button class="tab" data-tab="balance">Баланс</button>
+          </div>
+
+          <div class="tab-content">
+            <!-- Номера -->
+            <div class="tab-panel active" id="panel-menu">
+              <div class="numbers-grid">
+                <div class="number-card" data-number="+888 0427 9405">
+                  <div class="number-card-inner">
+                    <span class="number-code">+888</span>
+                    <span class="number-digits">0427 9405</span>
+                  </div>
+                  <div class="number-card-bottom">
+                    <span class="price">60 $</span>
+                    <button class="rent-btn">Проверка</button>
+                  </div>
+                </div>
+                <div class="number-card" data-number="+888 0693 9164">
+                  <div class="number-card-inner">
+                    <span class="number-code">+888</span>
+                    <span class="number-digits">0693 9164</span>
+                  </div>
+                  <div class="number-card-bottom">
+                    <span class="price">60 $</span>
+                    <button class="rent-btn">Проверка</button>
+                  </div>
+                </div>
+                <div class="number-card" data-number="+888 0524 9679">
+                  <div class="number-card-inner">
+                    <span class="number-code">+888</span>
+                    <span class="number-digits">0524 9679</span>
+                  </div>
+                  <div class="number-card-bottom">
+                    <span class="price">60 $</span>
+                    <button class="rent-btn">Проверка</button>
+                  </div>
+                </div>
+                <div class="number-card" data-number="+888 0547 3819">
+                  <div class="number-card-inner">
+                    <span class="number-code">+888</span>
+                    <span class="number-digits">0547 3819</span>
+                  </div>
+                  <div class="number-card-bottom">
+                    <span class="price">60 $</span>
+                    <button class="rent-btn">Проверка</button>
+                  </div>
+                </div>
+                <div class="number-card" data-number="+888 0735 1946">
+                  <div class="number-card-inner">
+                    <span class="number-code">+888</span>
+                    <span class="number-digits">0735 1946</span>
+                  </div>
+                  <div class="number-card-bottom">
+                    <span class="price">60 $</span>
+                    <button class="rent-btn">Проверка</button>
+                  </div>
+                </div>
+                <div class="number-card" data-number="+888 0547 3819">
+                  <div class="number-card-inner">
+                    <span class="number-code">+888</span>
+                    <span class="number-digits">0547 3819</span>
+                  </div>
+                  <div class="number-card-bottom">
+                    <span class="price">60 $</span>
+                    <button class="rent-btn">Проверка</button>
+                  </div>
+                </div>
+                <div class="number-card" data-number="+888 0325 7914">
+                  <div class="number-card-inner">
+                    <span class="number-code">+888</span>
+                    <span class="number-digits">0325 7914</span>
+                  </div>
+                  <div class="number-card-bottom">
+                    <span class="price">60 $</span>
+                    <button class="rent-btn">Проверка</button>
+                  </div>
+                </div>
+                <div class="number-card" data-number="+888 0724 1365">
+                  <div class="number-card-inner">
+                    <span class="number-code">+888</span>
+                    <span class="number-digits">0724 1365</span>
+                  </div>
+                  <div class="number-card-bottom">
+                    <span class="price">60 $</span>
+                    <button class="rent-btn">Проверка</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Арендованные -->
+            <div class="tab-panel" id="panel-numbers">
+              <h2 class="panel-title">Арендованные номера</h2>
+              <p class="panel-text">У вас пока нет арендованных номеров.</p>
+            </div>
+
+            <!-- Баланс -->
+            <div class="tab-panel" id="panel-balance">
+              <div class="balance-card">
+                <div class="balance-header">
+                  <img class="avatar" id="userAvatar" src="" alt="Avatar" />
+                  <div class="balance-user-info">
+                    <span class="balance-username" id="balanceUsername">Загрузка...</span>
+                    <span class="balance-user-id" id="balanceUserId">ID: ---</span>
+                  </div>
+                </div>
+                <div class="balance-amount">
+                  <span class="balance-label">Баланс</span>
+                  <span class="balance-value" id="balanceValue">0 $</span>
+                </div>
+                <button class="balance-btn" id="balanceBtn">Пополнить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- МОДАЛКА ПРОВЕРКИ -->
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <div class="modal-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+        <h3 class="modal-title">Ожидайте информацию</h3>
+        <p class="modal-text">В течении 5 минут бот отправит информацию о номере <span id="modalNumber"></span></p>
+        <button class="modal-btn" id="modalBtn">Понятно</button>
+      </div>
+    </div>
+
+    <!-- МОДАЛКА ПОПОЛНЕНИЯ -->
+    <div class="modal-overlay" id="depositModalOverlay">
+      <div class="modal">
+        <div class="modal-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+            <line x1="1" y1="10" x2="23" y2="10"></line>
+          </svg>
+        </div>
+        <h3 class="modal-title">Пополнение баланса</h3>
+        <p class="modal-text">Для пополнения 60$ по этому Адресу:</p>
+        <div class="wallet-address">UQA8IM_HtdZhN0_yz9oKdeED_ZltGluJByDbm5unJM6UtkEY</div>
+        <button class="modal-btn" id="depositModalBtn">Понятно</button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
